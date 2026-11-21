@@ -1,0 +1,14 @@
+# Debian-based container image for multi-distro and multi-file Dockerfile testing
+FROM debian:11.0
+
+LABEL description="Debian demo container image for Locator Agent OS package testing"
+
+WORKDIR /app
+
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    openssl \
+    curl \
+    python3 \
+    && rm -rf /var/lib/apt/lists/*
+
+COPY requirements.txt .

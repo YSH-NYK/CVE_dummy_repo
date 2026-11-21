@@ -1,0 +1,4 @@
+# Test runner dependencies
+pytest==6.2.2
+coverage==5.5
+PyYAML==5.3

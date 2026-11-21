@@ -1,0 +1,5 @@
+# Core application dependencies (deliberately vulnerable for CVE Fixer demo)
+PyYAML==5.3
+urllib3==1.26.4
+Jinja2==2.11.2
+Flask==1.1.2
